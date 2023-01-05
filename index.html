@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webike</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            bike_pattern: "url('/assets/media/decors/bike-decor.svg')",
+            fr_flag: "url('/assets/media/icons/lang/flag-FR.svg')",
+          },
+          colors: {
+            primary_color: '#4F48ED',
+            secondary_color: '#FFBF25',
+            grey: '#F6F6F8',
+            grey_blue: '#888EA8',
+            dark_blue: '#282B3A',
+            light_purple: '#C7C5F5',
+            white: '#FFFFFF'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative">
+  <header role="banner" class="z-50 fixed top-10 right-1/2 translate-x-1/2 w-[80%] flex px-10 py-3 items-center justify-between min-h-fit rounded-3xl bg-white drop-shadow-md">
+      <img src="/assets/media/logos/logo-webike.svg" alt="webike-logo">
+      <nav class="flex items-center text-dark_blue">
+        <ul>
+          <li class="table-cell"><a href="#" class="mr-9">Pourquoi utiliser WEBIKE</a></li>
+          <li class="table-cell"><a href="#" class="mr-9">Fonctionalités</a></li>
+        </ul>
+        <a href="#" class="inline-block w-fit rounded-md bg-secondary_color py-2 px-4 text-sm font-bold text-dark_blue">Télécharger WEBIKE</a>
+      </nav>
+  </header>
+  <header class="relative flex justify-center items-center px-32 w-full h-screen">
+    <div class="flex-1 h-100">
+      <img src="/assets/media/decors/mobile-left.svg" alt="" class="absolute bottom-[15%]">
+      <img src="/assets/media/decors/mobile-right.svg" alt="" class="absolute bottom-1/2 left-64 translate-y-1/2">
+    </div>
+    <div class="flex flex-[2_2_0] flex-col justify-center h-full">
+      <h1 class="text-primary_color text-5xl uppercase"><span class="text-6xl font-black">Découvrez Webike</span><br> l'app créée pour <strong>vous</strong> et <strong>vos ami•e•s</strong></h1>
+      <p class="text-grey_blue my-4 w-10/12">Voyagez dans Bordeaux facilement avec l’application mobile WEBIKE, qui vous permet de réserver à plusieurs et de circuler dans toute la métropole, rapidement et en toute liberté !</p>
+      <a href="#" class="inline-block w-fit rounded-md bg-secondary_color py-2 px-4 text-sm font-bold text-dark_blue">Télécharger WEBIKE</a>
+    </div>
+  </header>
+  <main>
+    <section id="why-webike" class="bg-grey bg-bike_pattern bg-no-repeat bg-right-bottom rounded-3xl px-32 py-32">
+      <h2 class="z-10 text-primary_color uppercase font-medium text-4xl mb-16">Pourquoi choisir <strong>WEBIKE</strong> ?</h2>
+
+      <div class="z-10 flex flex-wrap mb-8">
+        <div class="flex flex-1">
+          <div class="flex items-center justify-center bg-light_purple rounded-lg p-4 w-32 h-32">
+            <img src="/assets/media/icons/icon-1.svg" alt="">
+          </div>
+          <p class="flex-[2_2_0] px-8 text-grey_blue">Pas de perte de temps dans les embouteillages ! Pas de prise de tête avec les horaires et les correspondances des bus et des trams ! Pas de contrainte de trajet, et oui le vélo passe partout !</p>
+        </div>
+
+        <div class="flex flex-1">
+          <div class="flex items-center justify-center bg-light_purple rounded-lg p-4 w-32 h-32">
+            <img src="/assets/media/icons/icon-2.svg" alt="">
+          </div>
+          <p class="flex-[2_2_0] px-8 text-grey_blue">Faire du vélo est une activité physique qui peut vous exercer en douceur. Plus besoin de souscrire à la salle sans jamais y mettre les pieds !</p>
+        </div>
+      </div>
+      <div class="z-10 flex flex-wrap">
+        <div class="flex flex-1">
+          <div class="flex items-center justify-center bg-light_purple rounded-lg p-4 w-32 h-32">
+            <img src="/assets/media/icons/icon-3.svg" alt="">
+          </div>
+          <p class="flex-[2_2_0] px-8 text-grey_blue">Pas besoin de faire le plein, ni de payer les places de parking. Il suffit de souscrire à un des différents forfaits disponibles sur le site TBM et d’apprécier la balade !</p>
+        </div>
+
+        <div class="flex flex-1">
+          <div class="flex items-center justify-center bg-light_purple rounded-lg p-4 w-32 h-32">
+            <img src="/assets/media/icons/icon-4.svg" alt="">
+          </div>
+          <p class="flex-[2_2_0] px-8 text-grey_blue">Réduisez votre <strong>consommation de CO2</strong> au quotidien avec <strong>WEBIKE</strong> ! Un petit geste pour vous, un grand pour la planète !</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="relative bg-dark_blue px-32 pt-24 pb-10 rounded-t-3xl mt-64">
+    <img src="/assets/media/decors/bikes-station-decor.svg" alt="" class="absolute top-[-15.3rem] right-12">
+    <img src="/assets/media/logos/logo-webike-white.svg" alt="Webike logo white">
+    <div>
+      <h4 class="text-white font-bold uppercase my-8">Retrouvez notre app sur</h4>
+      <div class="flex justify-between">
+        <a href="#" class="flex items-center py-4 px-8 rounded-md w-fit bg-white text-primary_color font-bold uppercase"><img src="/assets/media/logos/download-logos/store-1.svg" alt="" class="mr-8 w-10"> App store</a>
+        <a href="#" class="flex items-center py-4 px-8 rounded-md w-fit bg-white text-primary_color font-bold uppercase"><img src="/assets/media/logos/download-logos/store-2.svg" alt="" class="mr-8 w-10"> Play store</a>
+        <a href="#" class="flex items-center py-4 px-8 rounded-md w-fit bg-white text-primary_color font-bold uppercase"><img src="/assets/media/logos/download-logos/store-3.svg" alt="" class="mr-8 w-10"> App Gallery</a>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase mt-12 mb-4">Webike ensemble à <br>bordeaux</h4>
+        <select name="lang" id="lang" class="bg-fr_flag bg-no-repeat bg-contain bg-dark_blue pl-12 text-white font-light">
+          <option value="fr">Français, FRANCE</option>
+        </select>
+    </div>
+    <ul class="mt-4">
+      <li class="table-cell"><a href="#" class="mr-12"><img src="/assets/media/logos/social-media/twitter.svg" alt=""></a></li>
+      <li class="table-cell"><a href="#" class="mr-12"><img src="/assets/media/logos/social-media/instagram.svg" alt=""></a></li>
+      <li class="table-cell"><a href="#" class="mr-12"><img src="/assets/media/logos/social-media/youtube.svg" alt=""></a></li>
+    </ul>
+    <span class="text-grey_blue text-sm">Copyright © 2022 WeBike. Tous droits réservés.</span>
+    <ul class="text-white text-sm">
+      <li class="table-cell"><a href="#" class="border-solid border-r pr-8">Utilisation des cookies</a></li>
+      <li class="table-cell"><a href="#" class="border-solid border-r px-8">CGU</a></li>
+      <li class="table-cell"><a href="#" class="border-solid border-r px-8"> Mention légales</a></li>
+      <li class="table-cell"><a href="#" class="pl-8"> Plan du site</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
